@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKERHUB_CREDENTIALS = credentials('dockerhub-creation')
+        DOCKERHUB_CREDENTIALS = credentials('dockerhub')
         DOCKERHUB_USERNAME = "${DOCKERHUB_CREDENTIALS_USR}"
         IMAGE_NAME = 'simple-node-app'
     }
